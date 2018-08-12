@@ -1,0 +1,14 @@
+{
+  "name": "pjdemo",
+  "version": "1.0.0",
+  "description": "simple package.json demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pavlin",
+  "license": "ISC",
+  "dependencies": {
+    "expres": "0.0.5"
+  }
+}

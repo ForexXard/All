@@ -1,0 +1,89 @@
+<% include partials/header %>
+
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center;">Create a New Table Row</h1>
+        <div style="width: 30%; margin: 30px auto;">
+            <form action="/main/<%= truck._id %>?_method=PUT" method="POST">
+                <div class="from-group">
+                    <h4>DATA Partenza</h4>
+                    <input class="form-control" type="text" name="truck[dataPartenca]" value=<%=truck.dataPartenca%>>
+                </div>
+                <div class="from-group">
+                    <h4>Targa Trattore e Cisterna</h4>
+                    <input class="form-control" type="text" name="truck[targa]" value="<%=truck.targa%>">
+                </div>
+                <div class="from-group">
+                    <h4>Luogo Partenza</h4>
+                    <input class="form-control" type="text" name="truck[luogoP]" value="<%=truck.luogoP%>">
+                </div>
+                <div class="from-group">
+                    <h4>MERCE</h4>
+                    <input class="form-control" type="text" name="truck[merce]" value="<%=truck.merce%>">
+                </div>
+                <div class="from-group">
+                    <h4>TON.</h4>
+                    <input class="form-control" type="text" name="truck[ton]" value="<%=truck.ton%>">
+                </div>
+                <div class="from-group">
+                    <h4>LUOGO ARRIVO</h4>
+                    <input class="form-control" type="text" name="truck[luogoA]" value="<%=truck.luogoA%>">
+                </div>
+                <div class="from-group">
+                    <h4>DATA ARRIVO</h4>
+                    <input class="form-control" type="text" name="truck[dataArrivo]" value="<%=truck.dataArrivo%>">
+                </div>
+                <div class="from-group">
+                    <h4>Km percorsi a CARICO</h4>
+                    <input class="form-control" type="text" name="truck[kmCarico]" value="<%=truck.kmCarico%>">
+                </div>
+                <div class="from-group">
+                    <h4>Km percorsi a VUOTO</h4>
+                    <input class="form-control" type="text" name="truck[kmVuoto]" value="<%=truck.kmVuoto%>">
+                </div>
+                <div class="from-group">
+                    <h4>N. PRATICA</h4>
+                    <input class="form-control" type="text" name="truck[nPratica]" value="<%=truck.nPratica%>">
+                </div>
+                <div class="from-group">
+                    <h4>LOC. LAVAGGIO/NOME LAVAGGIO</h4>
+                    <input class="form-control" type="text" name="truck[nomeLavaggio]" value="<%=truck.nomeLavaggio%>">
+                </div>
+                <div class="from-group">
+                    <h4>COSTO LAV.EUR (SENZA iva)</h4>
+                    <input class="form-control" type="text" name="truck[costoLavaggio]" value="<%=truck.costoLavaggio%>">
+                </div>
+                <div class="from-group">
+                    <h4>USO NS.pompa.</h4>
+                    <input class="form-control" type="text" name="truck[usoPompa]" value="<%=truck.usoPompa%>">
+                </div>
+                <div class="from-group">
+                    <h4>USO NS.comp.</h4>
+                    <input class="form-control" type="text" name="truck[usoCompressore]" value="<%=truck.usoCompressore%>">
+                </div>
+                <div class="from-group">
+                    <h4>QUANTITA SERVIZIO</h4>
+                    <input class="form-control" type="text" name="truck[quantitaServ]" value="<%=truck.quantitaServ%>">
+                </div>
+                <div class="from-group">
+                    <h4>LT GASOLIO</h4>
+                    <input class="form-control" type="text" name="truck[litriGasolio]" value="<%=truck.litriGasolio%>">
+                </div>
+                <div class="from-group">
+                    <h4>LUOGO RIFORN.</h4>
+                    <input class="form-control" type="text" name="truck[luogoRiforn]" value="<%=truck.luogoRiforn%>">
+                </div>
+                <div class="from-group">
+                    <h4>Imagine</h4>
+                    <input class="form-control" type="text" name="truck[image]" placeholder="Imagine">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<% include partials/footer %>

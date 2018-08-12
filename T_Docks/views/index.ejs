@@ -1,0 +1,55 @@
+<% include partials/header %>
+
+<h1>Documentazione Viaggi</h1>
+
+<table class="table table-bordered">
+    <thead>
+		<tr>
+			<th scope="col">N. PRATICA</th>
+			<th scope="col">DATA Partenza</th>
+			<th scope="col">TARGA trattore e cisterna</th>
+			<th scope="col">Luogo Partenza</th>
+			<th scope="col">MERCE</th>
+			<th scope="col">TON.</th>
+			<th scope="col">LUOGO ARRIVO</th>
+			<th scope="col">DATA ARRIVO</th>
+			<th scope="col">Km percorsi a CARICO</th>
+			<th scope="col">Km percorsi a VUOTO</th>
+			<th scope="col">LOC. LAVAGGIO/NOME LAVAGGIO</th>
+			<th scope="col">COSTO LAV.EUR (SENZA iva)</th>
+			<th scope="col">USO NS.pompa.</th>
+			<th scope="col">USO NS.comp.</th>
+			<th scope="col">QUANTITA SERVIZIO</th>
+			<th scope="col">LT GASOLIO</th>
+			<th scope="col">LUOGO RIFORN.</th>
+			<th scope="col">18</th>
+		</tr>
+    </thead>
+    <tbody>
+    	<% formData.forEach(function(data){ %>
+    	<tr></td>
+    		<td><a href="/table"><%= data.nPratica %></a></td>
+    		<td><%= data.dataPartenca %></td>
+    		<td><%= data.targa %></td>
+    		<td><%= data.luogoP %></td>
+    		<td><%= data.merce %></td>
+    		<td><%= data.ton %></td>
+    		<td><%= data.luogoA %></td>
+    		<td><%= data.dataArrivo %></td>
+    		<td><%= data.kmCarico %></td>
+    		<td><%= data.kmVuoto %></td>
+    		<td><%= data.nomeLavaggio %></td>
+    		<td><%= data.costoLavaggio %></td>
+    		<td><%= data.usoPompa %></td>
+    		<td><%= data.usoCompressore %></td>
+    		<td><%= data.quantitaServ %></td>
+    		<td><%= data.litriGasolio %></td>
+    		<td><%= data.luogoRiforn %></td>
+    		<td><%= data.image %></td>
+    	</tr>
+    	<% }); %>
+    </tbody>
+    
+</table>
+
+<% include partials/footer %>

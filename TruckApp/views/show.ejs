@@ -1,0 +1,7 @@
+<%include ./partials/header%>
+<h1> The SHOWWWWWW </h1>
+<a href="/main/<%= truck._id %>/edit">Update</a>
+<form action="/main/<%= truck._id %>?_method=DELETE" method="POST">
+    <button>Delete</button>
+</form>
+<%include ./partials/footer%>
